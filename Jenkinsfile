@@ -20,8 +20,8 @@ pipeline {
 	       }
 	       steps {
 	           echo "Building Image and Conatiner"
-	           sh 'python3 -m test.py'
-	           sh 'python3 -m coverage xml -o test-reports/coverage.xml'
+	           sh 'python3 test.py'
+	           sh 'python3 coverage xml -o test-reports/coverage.xml'
 	       }
      }
   }
